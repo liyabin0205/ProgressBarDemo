@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.progressbardemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp" >
+
+        <com.app.progressbardemo.utils.HorizontalProgressBarWithNumber
+            android:id="@+id/id_progressbar01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:padding="5dp" />
+
+
+
+        <com.app.progressbardemo.utils.HorizontalProgressBarWithNumber
+            android:id="@+id/id_progressbar02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:padding="5dp"
+            android:progress="0"
+            app:progress_text_color="#ffF53B03"
+            app:progress_unreached_color="#ffF7C6B7" />
+
+        <com.app.progressbardemo.utils.RoundProgressBarWidthNumber
+            android:id="@+id/id_progress02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:padding="5dp"
+            android:progress="0" />
+
+        <com.app.progressbardemo.utils.RoundProgressBarWidthNumber
+            android:id="@+id/id_progress03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:padding="5dp"
+            android:progress="0"
+            app:progress_reached_bar_height="20dp"
+            app:progress_text_color="#ffF53B03"
+            app:radius="60dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

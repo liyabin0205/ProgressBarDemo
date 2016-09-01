@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">炫酷进度条</string>
+    <string name="action_settings">进度条1</string>
+    <string name="action_about">进度条2</string>
+    <string name="action_share">进度条3</string>
+    <string name="action_like">进度条4</string>
+</resources>
